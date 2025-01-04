@@ -6,8 +6,8 @@ import ClerkAppProvider from "@/components/providers/clerk-app-provider";
 import { TRPCReactProvider } from "@/trpc/react";
 
 export const metadata: Metadata = {
-  title: "CODE-X",
-  description: "A NEW GENERATION CODE EDITIOR SOFTWARE",
+  title: "GS-NOTES",
+  description: "A NOTE APP FOR SGSITS STUDENT",
 };
 
 export default function RootLayout({

@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import SectionHeader from "@/components/(home)/sections/section-header";
+import SectionHeader from "./section-header";
 
 // FeatureCard component
 interface FeatureCardProps {

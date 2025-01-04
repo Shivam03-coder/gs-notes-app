@@ -1,4 +1,7 @@
-import React from 'react';
+import { AppSidebar } from "@/components/app-sidebar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import Sidebarheader from "@/components/ui/sidebar-header";
+import React from "react";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -6,12 +9,14 @@ interface DashboardLayoutProps {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
-    <div>
-      <h1>Dashboard Layout</h1>
-      {/* Render children here */}
-      {children}
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <SidebarInset>
+        <Sidebarheader />
+        {children}
+      </SidebarInset>
+    </SidebarProvider>
   );
-}
+};
 
 export default DashboardLayout;
