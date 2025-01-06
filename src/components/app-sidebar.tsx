@@ -36,117 +36,105 @@ const data = {
   },
   navMain: [
     {
-      title: "Playground",
-      url: "#",
+      title: "Semester A",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Civil Mechanics",
+          url: "/dashboard/mechanics",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Mathematics A",
+          url: "/dashboard/mathematics",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Physics",
+          url: "/dashboard",
+        },
+        {
+          title: "Engineering Drawing",
+          url: "/dashboard/graphics",
+        },
+        {
+          title: "Electrical",
+          url: "/dashboard/electrical",
         },
       ],
     },
     {
-      title: "Models",
-      url: "#",
+      title: "Semester B",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Chemistry",
+          url: "/dashboard/sem-b/chemistry",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "Electronics",
+          url: "/dashboard/sem-b/electronics",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "Technical English",
+          url: "/dashboard/sem-b/english",
+        },
+        {
+          title: "Programming",
+          url: "/dashboard/sem-b/programming",
+        },
+        {
+          title: "Mathematics 2",
+          url: "/dashboard/sem-b/mathematics",
         },
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
+      title: "Code-Editior",
+      url: "/dashboard/sem-a/physics",
       icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
     },
     {
-      title: "Settings",
-      url: "#",
+      title: "Text-editior",
+      url: "/dashboard/sem-a/physics",
       icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
+    },
+    {
+      title: "Assigmnet-solve",
+      url: "/dashboard/sem-a/physics",
+      icon: Settings2,
+    },
+    {
+      title: "More",
+      url: "/dashboard/sem-a/physics",
+      icon: Settings2,
     },
   ],
   navSecondary: [
     {
       title: "Support",
-      url: "#",
+      url: "/dashboard/sem-a/physics",
       icon: LifeBuoy,
     },
     {
       title: "Feedback",
-      url: "#",
+      url: "/dashboard/sem-a/physics",
       icon: Send,
     },
   ],
   projects: [
     {
       name: "Design Engineering",
-      url: "#",
+      url: "/dashboard/sem-a/physics",
       icon: Frame,
     },
     {
       name: "Sales & Marketing",
-      url: "#",
+      url: "/dashboard/sem-a/physics",
       icon: PieChart,
     },
     {
       name: "Travel",
-      url: "#",
+      url: "/dashboard/sem-a/physics",
       icon: Map,
     },
   ],
@@ -156,7 +144,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar variant="inset" {...props}>
       <SidebarHeader>
-        <SidebarMenu className="bg-black text-secondary border border-white  rounded">
+        <SidebarMenu className="rounded border border-white bg-black text-secondary">
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">

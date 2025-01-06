@@ -4,7 +4,7 @@ import TaskSubjectChart from "@/app/_components/sem-a/task-subj-chart";
 import TimerTrackerCard from "@/app/_components/sem-a/time-tracker";
 import React from "react";
 
-const SemA = () => {
+const PhysicsPage = () => {
   return (
     <div className="page m-2 min-h-screen rounded-xl bg-secondary">
       <div className="flex flex-1 flex-col gap-4 p-4">
@@ -20,4 +20,5 @@ const SemA = () => {
   );
 };
 
-export default SemA;
+
+export default PhysicsPage
