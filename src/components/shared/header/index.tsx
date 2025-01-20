@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import NavMenuBox from "../nav-menu-box";
 import { currentUser } from "@clerk/nextjs/server";
+import Link from "next/link";
 
 const AppNavBar = async () => {
   const user = await currentUser();
@@ -20,9 +21,11 @@ const AppNavBar = async () => {
         <NavMenuBox />
         {/* SIGNIN-LOGIN SECTION */}
         {user ? (
-          <Button className="rounded text-secondary">
-            GO TO DASHBOARD <Rocket />{" "}
-          </Button>
+          <Link href="/dashboard">
+            <Button className="rounded text-secondary">
+              GO TO DASHBOARD <Rocket />{" "}
+            </Button>
+          </Link>
         ) : (
           <span className="flex items-center gap-2">
             <Button className="rounded" variant={"outline"}>
