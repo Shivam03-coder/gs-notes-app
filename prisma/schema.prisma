@@ -7,10 +7,15 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Post {
-    id        String   @id @default(auto()) @map("_id") @db.ObjectId
-    name      String
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-    @@index([name]) // Index on the name field for performance
+model User {
+    id           String  @id @default(auto()) @map("_id") @db.ObjectId
+    emailAddress String  @unique
+    name         String
+    imageUrl     String?
+    role         Role    @default(user)
+}
+
+enum Role {
+    user
+    admin
 }

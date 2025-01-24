@@ -1,7 +1,7 @@
-import RemainingSyllabusCard from "@/app/_components/sem-a/remaining-syllabus-card";
-import SyllabusRadarChart from "@/app/_components/sem-a/syllabus-chart";
-import TaskSubjectChart from "@/app/_components/sem-a/task-subj-chart";
-import TimerTrackerCard from "@/app/_components/sem-a/time-tracker";
+import RemainingSyllabusCard from "@/components/_sem-a/remaining-syllabus-card";
+import SyllabusRadarChart from "@/components/_sem-a/syllabus-chart";
+import TaskSubjectChart from "@/components/_sem-a/task-subj-chart";
+import TimerTrackerCard from "@/components/_sem-a/time-tracker";
 import React from "react";
 
 const PhysicsPage = () => {

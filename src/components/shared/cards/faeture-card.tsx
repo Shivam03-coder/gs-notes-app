@@ -10,7 +10,7 @@ import {
 import { Bookmark, Briefcase, ChevronRight, LeafIcon, Scale, Shield } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import SectionHeader from "@/components/(home)/sections/section-header";
+import SectionHeader from "@/components/_home/sections/section-header";
 
 // SolutionCard component
 interface SolutionCardProps {

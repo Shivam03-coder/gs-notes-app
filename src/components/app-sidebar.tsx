@@ -90,7 +90,7 @@ const data = {
     },
     {
       title: "Code-Editior",
-      url: "/dashboard/sem-a/physics",
+      url: "/dashboard/code-editior",
       icon: BookOpen,
     },
     {

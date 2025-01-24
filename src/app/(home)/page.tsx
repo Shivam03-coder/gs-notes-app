@@ -1,7 +1,7 @@
 import Appfooter from "@/components/shared/footer";
 import AppNavBar from "@/components/shared/header";
 import React from "react";
-import MainLayout from "../_components/(home)/main";
+import MainLayout from "../../components/_home/main";
 
 const HomePage = () => {
   return (
