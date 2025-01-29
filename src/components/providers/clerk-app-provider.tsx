@@ -6,7 +6,6 @@ const ClerkAppProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClerkProvider
       appearance={{
-        baseTheme: dark,
         layout: {
           socialButtonsPlacement: "bottom",
           socialButtonsVariant: "iconButton",
